@@ -29,13 +29,13 @@ List your routes in a table
 | /groceryList/:id | delete | delete a grocery item (destroy)|
 
 ## User Stories
-user can visit /groceryList and see a list of all groceries
-user can click on a name of a grocery and be taken to a show page
-user can click a delete button on the show page to delete the item
-user can click a new button on the index page and get a new grocery form
-user can click a create button on form page to create new grocery
-user can click an edit button grocery page to get an edit page
-user can click an update button on edit page to update grocery
+- user can visit /groceryList and see a list of all groceries
+- user can click on a name of a grocery and be taken to a show page
+- user can click a delete button on the show page to delete the item
+- user can click a new button on the index page and get a new grocery form
+- user can click a create button on form page to create new grocery
+- user can click an edit button grocery page to get an edit page
+- user can click an update button on edit page to update grocery
 
 ## Challenges
 
