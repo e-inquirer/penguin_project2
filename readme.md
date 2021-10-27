@@ -42,3 +42,12 @@ List your routes in a table
 - detail roadblocks and anything you did to overcome whether you did or didn't
 
 ## List of Technologies
+
+- JavaScript
+- express
+- liquid
+- liquid-express-views
+- dotenv
+- mongoose
+- morgan
+- method-override
