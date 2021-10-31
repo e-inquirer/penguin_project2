@@ -11,7 +11,7 @@ Model: Grocery
 
 name: String
 type: String
-onSale: Boolean
+addedToCart: Boolean
 
 ## Route Table
 
@@ -19,14 +19,14 @@ List your routes in a table
 
 | url | method | action |
 |-----|--------|--------|
-| /groceryList | get | get all grocery list items (index)|
-| /groceryList/:id | get | get a particular grocery (show)|
-| /groceryList/seed | get | seed grocery list data (seed)|
-| /groceryList/new | get | fill out form for new grocery (new)|
-| /groceryList | post | create new grocery (create)|
-| /groceryList/:id/edit | get | edit grocery item (edit)|
-| /groceryList/:id | put | update grocery item (update)|
-| /groceryList/:id | delete | delete a grocery item (destroy)|
+| /groceries | get | get all grocery list items (index)|
+| /groceries/:id | get | get a particular grocery (show)|
+| /groceries/seed | get | seed grocery list data (seed)|
+| /groceries/new | get | fill out form for new grocery (new)|
+| /groceries | post | create new grocery (create)|
+| /groceries/:id/edit | get | edit grocery item (edit)|
+| /groceries/:id | put | update grocery item (update)|
+| /groceries/:id | delete | delete a grocery item (destroy)|
 
 ## User Stories
 - user can visit /groceryList and see a list of all groceries
@@ -39,7 +39,8 @@ List your routes in a table
 
 ## Challenges
 
-- detail roadblocks and anything you did to overcome whether you did or didn't
+- Most bugs I encountered were due to typos or extraneous characters. I resolved the issues by correcting what was written.
+- When adding the "create new grocery" modal, I had to find a way to delay the page redirect so that the modal could be seen. After some research I found that I could use the setTimeout function to delay the redirect in my grocery.js controller.
 
 ## List of Technologies
 

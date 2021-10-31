@@ -63,7 +63,10 @@ router.post("/", (req, res) => {
     Grocery.create(req.body)
     .then((grocery) => {
         // redirect the user back to index route
-        res.redirect("/groceries")
+        //res.redirect("/groceries")
+        setTimeout(function() {
+            res.redirect("/groceries")
+        }, 5000)
     })
     // error handling
     .catch((error) => {
