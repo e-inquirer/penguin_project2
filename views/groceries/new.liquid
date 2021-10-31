@@ -1,0 +1,25 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<div>
+    <form action="/groceries" method="post">
+        <fieldset>
+            <legend>Create a new Grocery</legend>
+            <label>
+                Name: <input type="text" name="name" placeholder="enter grocery name"/>
+            </label>
+            <label>
+                Type: <input type="text" name="type" placeholder="enter grocery type"/>
+            </label>
+            <label>
+                Added to Cart: <input type="checkbox" name="addedToCart"/>
+            </label>
+        </fieldset>
+        <input type="submit" value="create new grocery"/>
+    </form>
+</div>
+
+
+
+
+{% endblock%}

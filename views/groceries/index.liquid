@@ -1,0 +1,22 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<div>
+    <a href="/groceries/new"><button>Create a New Grocery</button></a>
+    {% for grocery in groceries %}
+        <article>
+            <a href="/groceries/{{ grocery._id }}">
+                <h2>
+                    {{grocery.name}} - 
+                        {% if grocery.addedToCart == true %}
+                            Added to cart
+                        {% else %}
+                            Not in cart
+                        {% endif %}
+                </h2>
+            </a>
+        </article>
+    {% endfor %}
+</div>
+
+{% endblock %}

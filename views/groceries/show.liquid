@@ -1,0 +1,20 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<article>
+    <h2>
+        {{grocery.name}} -
+        {% if grocery.addedToCart == true %}
+            Added to cart
+        {% else %}
+            Not added to cart
+        {% endif %}
+    </h2>
+    <h3>{{grocery.type}}</h3>
+    <a href="/groceries/{{grocery._id }}/edit"><button>EDIT</button></a>
+    <form action="/groceries/{{ grocery._id }}?_method=DELETE" method="post">
+        <input type="submit" value="DELETE"> 
+    </form>
+    <a href="/groceries"><button>Back to Grocery List</button></a>
+</article>
+{% endblock %}

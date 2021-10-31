@@ -1,0 +1,30 @@
+{% layout "layout.liquid" %}
+{% block content %}
+
+<div>
+    <form action="/groceries/{{ grocery._id }}?_method=PUT" method="post">
+        <fieldset>
+            <legend>Edit {{grocery.name}}</legend>
+            <label>
+                Name: <input type="text" name="name" placeholder="enter grocery name" value = {{grocery.name}}>
+            </label>
+            <label>
+                Type: <input type="text" name="type" placeholder="enter grocery type" value = {{grocery.type}}>
+            </label>
+            <label>
+                Added to Cart: <input type="checkbox" name="addedToCart"
+                {% if grocery.addedToCart == true %}
+                    checked
+                {% endif %}
+                
+                />
+            </label>
+        </fieldset>
+        <input type="submit" value="update {{grocery.name}}">
+    </form>
+</div>
+
+
+
+
+{% endblock%}
